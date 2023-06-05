@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- TODO: Include Font Awesome file here -->
+    <!-- TODO: Include Google Fonts file here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/postlist.css">
+</head>
+
+<body class="postBody">
+    <!-- TODO: Include code for header here -->
+
+    <div>
+        <header>
+            <h1>ScriBBler</h1>
+            <h3>Explore, Imagine, Create</h3>
+            <button class="subbtn1" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign Up</button>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" >
+                  <div class="modal-content" id="signUpForm" >
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Get Started</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="a-form">
+                            <div class="mb-3">
+                                <label id="name" for="exampleInputEmail1" class="form-label">Name</label>
+                                <input type="text" placeholder="Enter your name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                                 </div>
+                                 <div class="mb-3">
+                                    <label id="userName" for="exampleInputEmail1" class="form-label">Username</label>
+                                    <input type="text" placeholder="Enter your username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                                     </div>
+                            <div class="mb-3">
+                              <label id="password" for="exampleInputEmail1" class="form-label">Password</label>
+                              <input type="password" placeholder="Enter your password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                               </div>
+                            <div class="mb-3">
+                              <label id="confirmPwd" for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                              <input type="password" placeholder="Re-enter your password" class="form-control" id="exampleInputPassword1" required>
+                            </div>
+                            <button id="modalButton" type="submit" class="btn btn-primary">Sign Up</button>
+                          </form>
+                          <div id="errorMessage" style="display: none; color: red;"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            <button class="subbtn2" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">Sign In</button>
+
+            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" >
+                  <div class="modal-content" id="signInForm">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Welcome Back</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="a-form1">
+                            <div class="mb-3">
+                              <label id="userName" for="exampleInputEmail1" class="form-label">Username</label>
+                              <input type="text" placeholder="Enter your username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                               </div>
+                            <div class="mb-3">
+                              <label id="password" for="exampleInputPassword1" class="form-label">Password</label>
+                              <input type="password" placeholder="Enter your password" class="form-control" id="exampleInputPassword1" required>
+                            </div>
+                            <button id="modalButton" type="submit" class="btn btn-primary" style="width: 100px;">Sign In</button>
+                            <div>
+                                <p >Not a member?<a href="#" class="text signin-link">Sign Up</a></p>
+                            </div>
+
+                          </form>
+                          <div id="errorMessage1" style="display: none; color: red;"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+        </header>
+
+        </div>
+
+
+    <!-- ATTENTION: The HTML code for the list of posts has been given to you. You can feel free to add/delete/modify this code. You need to write the proper CSS and JavaScript code corresponding to this page so that the result looks like the screenshots given to you in the Project Statement. -->
+
+    <!-- list of all posts starts here -->
+    
+    <div class="project-block">
+        
+        <!-- post 1 starts here -->
+        <div class="project-card" id="card1">
+            <div class="authorName">
+                <p>Srishti Gupta</p>
+            </div>
+
+            <div class="authorContent">
+                <div>
+                    <p style="color: grey;">‘let’ me be a ‘const’(ant), not a ‘var’(iable)!
+                    <span id="iconTrash"  data-bs-toggle="modal" data-bs-target="#myModal">
+                        <!-- TODO: Include Font Awesome icon for delete icon here -->
+                        <i class="fa-solid fa-trash" onclick="remove()"></i>
+                       
+                    </span>
+                </p>
+                </div>
+                <div class="text-container">
+                <p class="text">Since JavaScript does not have any type-checking, either of these keywords can be used to declare a variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same purpose, they are different.</p>
+            </div>
+                <span id="iconElipsis">
+                    <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                    <i class="fa-solid fa-ellipsis"></i>
+                </span>
+            </div>
+        </div>
+        <!-- post 1 ends here -->
+
+        <!-- post 2 starts here -->
+        <div class="project-card" id="card2">
+            <div class="authorName">
+                <p>Colby Fayock</p>
+            </div>
+
+            <div class="authorContent">
+                <div>
+                    <p style="color: grey;">What is linting and how can it save you time?
+                    <span  id="iconTrash" style="position: relative; top:1px; left: 130px;" data-bs-toggle="modal" data-bs-target="#myModal">
+                        <!-- TODO: Include Font Awesome icon for delete icon here -->
+                        <i class="fa-solid fa-trash"></i>
+                    </span>
+                   
+                </p>
+                </div>
+                <div class="text-container">
+                <p class="text">One of the biggest challenges in software development is time. It’s something we can’t easily get more of, but linting can help us make the most out of the time we have.</p>
+            </div>
+                <span id="iconElipsis">
+                    <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                    <i class="fa-solid fa-ellipsis"></i>
+                </span>
+            </div>
+        </div>
+        <!-- post 2 ends here -->
+
+        <!-- post 3 starts here -->
+        <div class="project-card" id="card3">
+            <div class="authorName">
+                <p>Yazeed Bzadough</p>
+            </div>
+
+            <div class="authorContent">
+                <div>
+                    <p style="color: grey;">How to Get More Views on Your Tech Blog
+                    <span id="iconTrash" style="position: relative; top:1px; left: 145px;"  data-bs-toggle="modal" data-bs-target="#myModal">
+                        <!-- TODO: Include Font Awesome icon for delete icon here -->
+                        <i class="fa-solid fa-trash"></i>
+                    </span>
+                </p>
+                </div>
+                <div class="text-container">
+                <p class="text">If you're a developer with a Twitter account, you've already seen everyone and their cat start a blog, YouTube channel, or Patreon. We all want to become stars, or at the very least, a recognizable name in the industry.</p>
+            </div>
+                <span  id="iconElipsis">
+                    <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                    <i class="fa-solid fa-ellipsis"></i>
+                </span>
+            </div>
+        </div>
+        <!-- post 3 ends here -->
+
+        <!-- post 4 starts here -->
+        <div class="project-card" id="card4">
+            <div class="authorName">
+                <p>Cedd Burge</p>
+            </div>
+
+            <div class="authorContent">
+                <div>
+                    <p style="color: grey;">How to write easily describable code
+                    <span id="iconTrash" style="position: relative; top:1px; left: 180px;"  data-bs-toggle="modal" data-bs-target="#myModal">
+                        <!-- TODO: Include Font Awesome icon for delete icon here -->
+                        <i class="fa-solid fa-trash"></i>
+                    </span>
+                </div>
+            </p>
+                <div class="text-container">
+                <p class="text">When code is not describable using words, most people have to do some mental mapping to turn it in to words. This wastes mental energy, and you run the risk of getting the mapping wrong. Different people will map to different words, which
+                    leads to confusion when discussing the code.</p>
+                </div>
+                    <span id="iconElipsis">
+                    <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                    <i class="fa-solid fa-ellipsis"></i>
+                </span>
+            </div>
+        </div>
+        <!-- post 4 ends here -->
+
+        <!-- post 5 starts here -->
+        <div class="selected" id="card5">
+        <div class="project-card"  style="align-self: center;">
+            <div class="authorName">
+                <p>Srishti Gupta</p>
+            </div>
+
+            <div class="authorContent">
+                <div >
+                    <p style="color: grey;">Everything you should know about ‘module’ & ‘require’ in Node.js
+                    <span id="iconTrash"  style="position: relative; top:1px; left: 14px;"  data-bs-toggle="modal" data-bs-target="#myModal">
+                        <!-- TODO: Include Font Awesome icon for delete icon here -->
+                        <i class="fa-solid fa-trash"></i>
+                    </span>
+                </p>
+                </div>
+                <div class="text-container">
+                <p class="text">Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can say that you’ve created a module
+                    named xyz.</p>
+                </div>
+                <span id="iconElipsis">
+                    <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                    <i class="fa-solid fa-ellipsis"></i>
+                </span>
+            </div>
+        </div>
+        </div>
+        <!-- post 5 ends here -->
+
+        <!-- TODO: Write code for delete post modal here -->
+        <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" >
+              <div class="modal-content" style="width: 340px; height: 120px; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); border-radius: 0;">
+                
+                <div class="modal-body">
+                        <h6 style="font-weight: normal;">Are you sure you want to delete this post!</h6>
+                        </div>
+                        <div class="modal-footer">
+                            <button id="btnYesConfirm" type="button" class="btn btn-success"
+                                style="margin-right: 200px;" data-dismiss="modal"
+                                onclick="removeCard('card5')">Yes</button>
+                            <button id="btnNoConfirmYesNo" type="button" class="btn btn-danger"
+                                data-dismiss="modal">No</button>
+                        </div>
+                        
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </div>
+    <!-- list of all posts ends here -->
+
+<script src="../scripts/common.js"></script>
+<script src="../script/postlist.js"></script>
+<script src="../scripts/index.js"></script>
+</body>
+
+</html>

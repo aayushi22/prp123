@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../html/postlist.html">
+    <link rel="stylesheet" href="../index.html">
+    <link rel="stylesheet" href="../styles/postlist.css">
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/post.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <header>
+            <h1>ScriBBler</h1>
+            <h3>Explore, Imagine, Create</h3>
+            <!--sign in-->
+            <div class="signin form">
+              <button class="subbtn1" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign Up</button>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" >
+                  <div class="modal-content" id="signUpForm" >
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Get Started</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="a-form">
+                            <div class="mb-3">
+                                <label id="name" for="exampleInputEmail1" class="form-label">Name</label>
+                                <input type="text" placeholder="Enter your name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                                 </div>
+                                 <div class="mb-3">
+                                    <label id="userName" for="exampleInputEmail1" class="form-label">Username</label>
+                                    <input type="text" placeholder="Enter your username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                                     </div>
+                            <div class="mb-3">
+                              <label id="password" for="exampleInputEmail1" class="form-label">Password</label>
+                              <input type="password" placeholder="Enter your password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                               </div>
+                            <div class="mb-3">
+                              <label id="confirmPwd" for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                              <input type="password" placeholder="Re-enter your password" class="form-control" id="exampleInputPassword1" required>
+                            </div>
+                            <button id="modalButton" type="submit" class="btn btn-primary">Sign Up</button>
+                          </form>
+                          <div id="errorMessage" style="display: none; color: red;"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+
+<!--sign up -->
+<div class="signup-form">
+  <button class="subbtn2" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">Sign In</button>
+
+            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" >
+                  <div class="modal-content" id="signInForm">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Welcome Back</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="a-form1">
+                            <div class="mb-3">
+                              <label id="userName" for="exampleInputEmail1" class="form-label">Username</label>
+                              <input type="text" placeholder="Enter your username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                               </div>
+                            <div class="mb-3">
+                              <label id="password" for="exampleInputPassword1" class="form-label">Password</label>
+                              <input type="password" placeholder="Enter your password" class="form-control" id="exampleInputPassword1" required>
+                            </div>
+                            <button id="modalButton" type="submit" class="btn btn-primary">Sign In</button>
+                            <div>
+                                <p >Not a member?<a href="#" class="text signin-link">Sign Up</a></p>
+                            </div>
+
+                          </form>
+                          <div id="errorMessage1" style="display: none; color: red;"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                  </div>
+                </div>
+              </div>
+</div>
+            
+            
+
+
+
+
+        </header>
+     </div>
+    <div>
+        <div class="heading">
+            <p><b>Everything you should know about ‘module’ & ‘require’ in Node.js </b></p>
+        </div>
+        <div class="author" style="font-family:monospace;float: left;margin-left: 50px;">
+            <p>Srishti Gupta</p>
+        </div>
+        <div  class="likeBlogButton" >
+          <button id="likeBlog" style="background-color: rgb(255, 0, 85);">Edit<i class="fas fa-edit" style="color: #fafafa;"></i></button>
+            
+        </div>
+        <div class="longcontent">
+            <p>
+                Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can say that you’ve created a module
+                named xyz Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quae tempore soluta dicta reiciendis autem totam excepturi, libero quasi tenetur a dolore exercitationem ratione aspernatur minus ipsum. Ullam, laudantium eum.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dolores deserunt adipisci reprehenderit cupiditate excepturi aliquid autem pariatur ad beatae, quidem error mollitia omnis similique rerum fugiat consequuntur magni nesciunt dolore libero tenetur voluptates asperiores? Sed distinctio ex ad voluptatibus temporibus dicta impedit fugit laudantium harum quaerat repellat sequi magni aut consectetur nesciunt quam omnis doloremque, facere exercitationem amet laboriosam dolor voluptatem minima! In voluptas ad explicabo, porro quas eligendi.
+            </p>
+        </div>
+    </div>
+</body>
+<script src="../scripts/post.js"></script>
+</html>
